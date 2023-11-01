@@ -1,6 +1,6 @@
 {
   "name": "@vrabbi/harbor-plugin-wrapper-backend",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "main": "src/index.ts",
   "types": "src/index.ts",
   "license": "Apache-2.0",
@@ -24,7 +24,7 @@
   "dependencies": {
     "@types/express": "^4.17.17",
     "@vmware-tanzu/core-backend": "1.0.0",
-    "@vrabbi/backstage-plugin-harbor-backend": "^0.3.3",
+    "@vrabbi/backstage-plugin-harbor-backend": "0.4.0",
     "express": "^4.18.2",
     "express-promise-router": "^4.1.0"
   },
