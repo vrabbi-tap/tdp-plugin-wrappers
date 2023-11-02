@@ -24,7 +24,6 @@
   },
   "workspaces": {
     "packages": [
-      "packages/*",
       "plugins/*"
     ]
   },
