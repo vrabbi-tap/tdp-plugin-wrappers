@@ -1,6 +1,6 @@
 {
   "name": "@vrabbi/harbor-plugin-wrapper",
-  "version": "0.3.0",
+  "version": "0.5.0",
   "main": "src/index.ts",
   "types": "src/index.ts",
   "license": "Apache-2.0",
@@ -26,7 +26,7 @@
     "@backstage/plugin-catalog": "1.11.2",
     "@vmware-tanzu/core-common": "1.0.0",
     "@vmware-tanzu/core-frontend": "1.0.0",
-    "@vrabbi/backstage-plugin-harbor": "0.4.1"
+    "@vrabbi/backstage-plugin-harbor": "0.5.0"
   },
   "peerDependencies": {
     "react": "^17.0.2",
