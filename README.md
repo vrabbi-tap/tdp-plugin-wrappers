@@ -9,6 +9,7 @@ In this repo you will find plugin wrappers built and tested for TAP 1.7 based on
 5. [ChatGPT Backend Wrapper](./plugins/chatgpt-wrapper-backend) - [Source Plugin](https://github.com/enfuse/backstage-chatgpt-backend)
 6. [Developer Toolbox Wrapper](./plugins/dev-toolbox-wrapper) - [Source Plugin](https://github.com/drodil/backstage-plugin-toolbox/blob/main/README.md)
 7. [Github Pull Requests Wrapper](./plugins/github-pull-requests-wrapper) - [Source Plugin](https://github.com/RoadieHQ/roadie-backstage-plugins/blob/main/plugins/frontend/backstage-plugin-github-pull-requests/README.md)
+8. [FluxCD Wrapper](./plugins/flux-wrapper) - [Source Plugin](https://github.com/weaveworks/weaveworks-backstage/blob/main/plugins/backstage-plugin-flux/README.md)
 
 ## Published Wrappers
 1. [Github Insights](https://www.npmjs.com/package/@vrabbi/github-insights-wrapper)
@@ -18,6 +19,7 @@ In this repo you will find plugin wrappers built and tested for TAP 1.7 based on
 5. [ChatGPT Backend Wrapper](https://www.npmjs.com/package/@vrabbi/chatgpt-wrapper-backend)
 6. [Developer Toolbox Wrapper](https://www.npmjs.com/package/@vrabbi/dev-toolbox-wrapper)
 7. [Github Pull Requests Wrapper](https://www.npmjs.com/package/@vrabbi/github-pull-requests-wrapper)
+8. [FluxCD Wrapper](https://www.npmjs.com/package/@vrabbi/flux-wrapper)
 
 ## Needed config in TAP Values:
 ### Github Insights
@@ -40,7 +42,9 @@ openai:
 ### Developer Toolbox
 Nothing is needed  
 ### Github Pull Requests
-Nothing is needed
+Nothing is needed  
+### FluxCD
+Nothing is needed  
 
 ## Annotations on catalog-info.yaml files
 ### Github Insights
@@ -72,5 +76,23 @@ for example:
 ```yaml
 annotations:
   github.com/project-slug: vrabbi/spring-petclinic
+```  
+### FluxCD
+```yaml
+annotations:
+  # Option 1 - this annotation must be set on the Flux CRs as well
+  backstage.io/kubernetes-id: VALUE
+  # Option 2 - The easier method using a custom label selector which the value must exist on the Flux CRs but is customizable for your needs
+  backstage.io/kubernetes-label-selector: K8S_LABEL_SELECTOR
+```  
+for example:
+```yaml
+annotations:
+  backstage.io/kubernetes-id: my-app
+```  
+or:  
+```yaml
+annotations:
+  backstage.io/kubernetes-label-selector: 'app=my-app'
 ```  
 
