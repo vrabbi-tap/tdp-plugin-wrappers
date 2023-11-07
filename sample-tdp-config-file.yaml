@@ -17,7 +17,7 @@ app:
     - name: '@vrabbi/github-actions-wrapper'
       version: '0.1.0'
     - name: '@vrabbi/tekton-wrapper'
-      version: '0.1.0'
+      version: '0.1.2'
     - name: '@vrabbi/harbor-plugin-wrapper'
       version: '0.6.1'
     - name: '@vrabbi/flux-wrapper'
@@ -26,6 +26,8 @@ app:
       version: '0.0.2'
     - name: '@vmware-tanzu/tdp-plugin-techinsights'
       version: '0.0.2'
+    - name: '@vrabbi/todo-wrapper'
+      version: '0.1.0'
 backend:
   plugins:
     - name: '@vmware-tanzu/tdp-plugin-techinsights-backend'
@@ -34,3 +36,5 @@ backend:
       version: '0.6.0'
     - name: '@vrabbi/chatgpt-wrapper-backend'
       version: '0.2.1'
+    - name: '@vrabbi/todo-wrapper-backend'
+      version: '0.1.0'
