@@ -16,13 +16,7 @@ An [example TDP Config file](./sample-tdp-config-file.yaml) is provided as well.
 10. **ChatGPT Frontend** - [Wrapper Code](./plugins/chatgpt-wrapper) - [Source Plugin Repo](https://github.com/enfuse/backstage-chatgpt-plugin/blob/main/README.md) - [Published Package](https://www.npmjs.com/package/@vrabbi/chatgpt-wrapper)
 11. **ChatGPT Backend** - [Wrapper Code](./plugins/chatgpt-wrapper-backend) - [Source Plugin Repo](https://github.com/enfuse/backstage-chatgpt-backend) - [Published Package](https://www.npmjs.com/package/@vrabbi/chatgpt-wrapper-backend)
 12. **Developer Toolbox** - [Wrapper Code](./plugins/dev-toolbox-wrapper) - [Source Plugin Repo](https://github.com/drodil/backstage-plugin-toolbox/blob/main/README.md) - [Published Package](https://www.npmjs.com/package/@vrabbi/dev-toolbox-wrapper)
-  
-## Planned Wrappers
-1. ArgoCD
-2. Kafka
-3. ElasticSearch
-4. KubeCost
-5. Tech Radar
+13. **K8sGPT** - [Wrapper Code](./plugins/k8s-gpt-wrapper) - [Source Plugin Repo](https://github.com/suxess-it/backstage-plugin-k8sgpt/blob/main/README.md) - [Published Package](https://www.npmjs.com/package/@vrabbi/k8s-gpt-wrapper)
   
 ## Plugins With Needed Config In TAP Values:
 ### Github Insights, Github Actions, Github Pull Requests
