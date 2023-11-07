@@ -5,35 +5,38 @@ An [example TDP Config file](./sample-tdp-config-file.yaml) is provided as well.
 
 ## Existing Wrappers
 1. [Github Insights](./plugins/github-insights-wrapper) - [Source Plugin](https://github.com/RoadieHQ/roadie-backstage-plugins/blob/main/plugins/frontend/backstage-plugin-github-insights/README.md)
-2. [Harbor Frontend](./plugins/harbor-plugin-wrapper) - [Source Plugin](https://github.com/container-registry/backstage-plugin-harbor/blob/master/README.md)
-3. [Harbor Backend](./plugins/harbor-plugin-wrapper-backend) - [Source Plugin](https://github.com/container-registry/backstage-plugin-harbor-backend)
-4. [ChatGPT Frontend](./plugins/chatgpt-wrapper) - [Source Plugin](https://github.com/enfuse/backstage-chatgpt-plugin/blob/main/README.md)
-5. [ChatGPT Backend](./plugins/chatgpt-wrapper-backend) - [Source Plugin](https://github.com/enfuse/backstage-chatgpt-backend)
-6. [Developer Toolbox](./plugins/dev-toolbox-wrapper) - [Source Plugin](https://github.com/drodil/backstage-plugin-toolbox/blob/main/README.md)
-7. [Github Pull Requests](./plugins/github-pull-requests-wrapper) - [Source Plugin](https://github.com/RoadieHQ/roadie-backstage-plugins/blob/main/plugins/frontend/backstage-plugin-github-pull-requests/README.md)
+2. [Github Pull Requests](./plugins/github-pull-requests-wrapper) - [Source Plugin](https://github.com/RoadieHQ/roadie-backstage-plugins/blob/main/plugins/frontend/backstage-plugin-github-pull-requests/README.md)
+3. [Github Actions](./plugins/github-actions-wrapper) - [Source Plugin](https://github.com/backstage/backstage/blob/master/plugins/github-actions/README.md)
+4. [Todo Frontend](./plugins/todo-wrapper) - [Source Plugin](https://github.com/backstage/backstage/blob/master/plugins/todo/README.md)
+5. [Todo Backend](./plugins/todo-wrapper-backend) - [Source Plugin](https://github.com/backstage/backstage/blob/master/plugins/todo-backend/README.md)
+6. [Harbor Frontend](./plugins/harbor-plugin-wrapper) - [Source Plugin](https://github.com/container-registry/backstage-plugin-harbor/blob/master/README.md)
+7. [Harbor Backend](./plugins/harbor-plugin-wrapper-backend) - [Source Plugin](https://github.com/container-registry/backstage-plugin-harbor-backend)
 8. [FluxCD](./plugins/flux-wrapper) - [Source Plugin](https://github.com/weaveworks/weaveworks-backstage/blob/main/plugins/backstage-plugin-flux/README.md)
-9. [Github Actions](./plugins/github-actions-wrapper) - [Source Plugin](https://github.com/backstage/backstage/blob/master/plugins/github-actions/README.md)
-10. [Tekton](./plugins/tekton-wrapper) - [Source Plugin](https://github.com/janus-idp/backstage-plugins/blob/main/plugins/tekton/README.md)  
-
+9. [Tekton](./plugins/tekton-wrapper) - [Source Plugin](https://github.com/janus-idp/backstage-plugins/blob/main/plugins/tekton/README.md)
+10. [ChatGPT Frontend](./plugins/chatgpt-wrapper) - [Source Plugin](https://github.com/enfuse/backstage-chatgpt-plugin/blob/main/README.md)
+11. [ChatGPT Backend](./plugins/chatgpt-wrapper-backend) - [Source Plugin](https://github.com/enfuse/backstage-chatgpt-backend)
+12. [Developer Toolbox](./plugins/dev-toolbox-wrapper) - [Source Plugin](https://github.com/drodil/backstage-plugin-toolbox/blob/main/README.md)
+  
 ## Published Wrappers
 1. [Github Insights](https://www.npmjs.com/package/@vrabbi/github-insights-wrapper)
-2. [Harbor Frontend](https://www.npmjs.com/package/@vrabbi/harbor-plugin-wrapper)
-3. [Harbor Backend](https://www.npmjs.com/package/@vrabbi/harbor-plugin-wrapper-backend)
-4. [ChatGPT Frontend](https://www.npmjs.com/package/@vrabbi/chatgpt-wrapper)
-5. [ChatGPT Backend](https://www.npmjs.com/package/@vrabbi/chatgpt-wrapper-backend)
-6. [Developer Toolbox](https://www.npmjs.com/package/@vrabbi/dev-toolbox-wrapper)
-7. [Github Pull Requests](https://www.npmjs.com/package/@vrabbi/github-pull-requests-wrapper)
+2. [Github Pull Requests](https://www.npmjs.com/package/@vrabbi/github-pull-requests-wrapper)
+3. [Github Actions](https://www.npmjs.com/package/@vrabbi/github-actions-wrapper)
+4. [Todo Frontend](https://www.npmjs.com/package/@vrabbi/todo-wrapper)
+5. [Todo Backend](https://www.npmjs.com/package/@vrabbi/todo-wrapper-backend) 
+6. [Harbor Frontend](https://www.npmjs.com/package/@vrabbi/harbor-plugin-wrapper)
+7. [Harbor Backend](https://www.npmjs.com/package/@vrabbi/harbor-plugin-wrapper-backend)
 8. [FluxCD](https://www.npmjs.com/package/@vrabbi/flux-wrapper)
-9. [Github Actions](https://www.npmjs.com/package/@vrabbi/github-actions-wrapper)
-10. [Tekton Pipelines](https://www.npmjs.com/package/@vrabbi/tekton-wrapper)  
-
+9. [Tekton Pipelines](https://www.npmjs.com/package/@vrabbi/tekton-wrapper)
+10. [ChatGPT Frontend](https://www.npmjs.com/package/@vrabbi/chatgpt-wrapper)
+11. [ChatGPT Backend](https://www.npmjs.com/package/@vrabbi/chatgpt-wrapper-backend)
+12. [Developer Toolbox](https://www.npmjs.com/package/@vrabbi/dev-toolbox-wrapper)
+  
 ## Planned Wrappers
 1. ArgoCD
 2. Kafka
 3. ElasticSearch
 4. KubeCost
 5. Tech Radar
-6. TODO
   
 ## Plugins With Needed Config In TAP Values:
 ### Github Insights, Github Actions, Github Pull Requests

@@ -1,0 +1,1 @@
+export { TodoFrontendPlugin as plugin } from './TodoFrontendPlugin'

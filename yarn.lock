@@ -2959,6 +2959,44 @@
     qs "^6.9.4"
     react-use "^17.3.2"
 
+"@backstage/plugin-todo-backend@0.3.4":
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/@backstage/plugin-todo-backend/-/plugin-todo-backend-0.3.4.tgz#00ba5848106893805695a068174e5c85fc087893"
+  integrity sha512-2amUAL3cpzd8ApGSr3/vo3+aPbUPuJCvuLeMPv5SALZ8vvVEDpnwx1Z/SYWUnd+FygcZX3T+qxIeJ1fukpDUMg==
+  dependencies:
+    "@backstage/backend-common" "^0.19.8"
+    "@backstage/backend-openapi-utils" "^0.0.5"
+    "@backstage/backend-plugin-api" "^0.6.6"
+    "@backstage/catalog-client" "^1.4.5"
+    "@backstage/catalog-model" "^1.4.3"
+    "@backstage/config" "^1.1.1"
+    "@backstage/errors" "^1.2.3"
+    "@backstage/integration" "^1.7.1"
+    "@backstage/plugin-catalog-node" "^1.4.7"
+    "@types/express" "^4.17.6"
+    express "^4.17.1"
+    express-promise-router "^4.1.0"
+    leasot "^12.0.0"
+    winston "^3.2.1"
+    yn "^4.0.0"
+
+"@backstage/plugin-todo@0.2.29":
+  version "0.2.29"
+  resolved "https://registry.yarnpkg.com/@backstage/plugin-todo/-/plugin-todo-0.2.29.tgz#224a7ec8113b759ccb14be6040e3d976ae18ecdd"
+  integrity sha512-a4AFNEYBbpdg0SjTZnzUlkX0Ctd5j9nGGaGEb40+8wuro1V0fjaEgbvjrsnqQtH0DaacloEX5daBIzKL1/VZug==
+  dependencies:
+    "@backstage/catalog-model" "^1.4.3"
+    "@backstage/core-components" "^0.13.6"
+    "@backstage/core-plugin-api" "^1.7.0"
+    "@backstage/errors" "^1.2.3"
+    "@backstage/plugin-catalog-react" "^1.8.5"
+    "@backstage/theme" "^0.4.3"
+    "@material-ui/core" "^4.12.2"
+    "@material-ui/icons" "^4.9.1"
+    "@material-ui/lab" "4.0.0-alpha.61"
+    "@types/react" "^16.13.1 || ^17.0.0"
+    react-use "^17.2.4"
+
 "@backstage/release-manifests@^0.0.10":
   version "0.0.10"
   resolved "https://registry.yarnpkg.com/@backstage/release-manifests/-/release-manifests-0.0.10.tgz#10f0c23cd1a00ca9b2ac5bf5c199592ba0abedae"
@@ -8486,6 +8524,11 @@ async-retry@^1.3.3:
   dependencies:
     retry "0.13.1"
 
+async@^3.2.0:
+  version "3.2.5"
+  resolved "https://registry.yarnpkg.com/async/-/async-3.2.5.tgz#ebd52a8fdaf7a2289a24df399f8d8485c8a46b66"
+  integrity sha512-baNZyqaaLhyLVKm/DlvdW051MSgO6b8eVfIezl9E5PqWxFgzLm/wQntEW4zOytVburDEr0JlALEpdOFwvErLsg==
+
 async@^3.2.3, async@^3.2.4:
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/async/-/async-3.2.4.tgz#2d22e00f8cddeb5fde5dd33522b56d1cf569a81c"
@@ -11418,6 +11461,11 @@ envinfo@^7.7.4:
   resolved "https://registry.yarnpkg.com/envinfo/-/envinfo-7.10.0.tgz#55146e3909cc5fe63c22da63fb15b05aeac35b13"
   integrity sha512-ZtUjZO6l5mwTHvc1L9+1q5p/R3wTopcfqMW8r5t8SJSKqeVI/LtajORwRFEKpEFuekjD0VBjwu1HMxL4UalIRw==
 
+eol@^0.9.1:
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/eol/-/eol-0.9.1.tgz#f701912f504074be35c6117a5c4ade49cd547acd"
+  integrity sha512-Ds/TEoZjwggRoz/Q2O7SE3i4Jm66mqTDfmdHdq/7DKVk3bro9Q8h6WdXKdPqFLMoqxrDK5SVRzHVPOS6uuGtrg==
+
 err-code@^2.0.2:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/err-code/-/err-code-2.0.3.tgz#23c2f3b756ffdfc608d30e27c9a941024807e7f9"
@@ -12714,7 +12762,7 @@ get-port@^5.1.1:
   resolved "https://registry.yarnpkg.com/get-port/-/get-port-5.1.1.tgz#0469ed07563479de6efb986baf053dcd7d4e3193"
   integrity sha512-g/Q1aTSDOxFpchXC4i8ZWvxA1lnPqx/JHqcpIw0/LX9T8x/GBbi6YnlN5nhaKIFkT8oFsscUKgDJYxfwfS6QsQ==
 
-get-stdin@=8.0.0:
+get-stdin@=8.0.0, get-stdin@^8.0.0:
   version "8.0.0"
   resolved "https://registry.yarnpkg.com/get-stdin/-/get-stdin-8.0.0.tgz#cbad6a73feb75f6eeb22ba9e01f89aa28aa97a53"
   integrity sha512-sY22aA6xchAzprjyqmSEQv4UbAAzRN0L2dQB0NlN5acTTK9Don6nhoc3eAbUnpZiCANAMfd/+40kVdKfFygohg==
@@ -12916,7 +12964,7 @@ globalthis@^1.0.1, globalthis@^1.0.3:
   dependencies:
     define-properties "^1.1.3"
 
-globby@^11.0.0, globby@^11.0.2, globby@^11.0.4, globby@^11.1.0:
+globby@^11.0.0, globby@^11.0.2, globby@^11.0.3, globby@^11.0.4, globby@^11.1.0:
   version "11.1.0"
   resolved "https://registry.yarnpkg.com/globby/-/globby-11.1.0.tgz#bd4be98bb042f83d796f7e3811991fbe82a0d34b"
   integrity sha512-jhIXaOzy1sb8IyocaruWSn1TjmnBVs8Ayhcy83rmxNJ8q2uWKCAj3CnJY+KpGSXCueAPc0i05kVvVKtP1t9S3g==
@@ -14820,6 +14868,11 @@ json2csv@^5.0.7:
     jsonparse "^1.3.1"
     lodash.get "^4.4.2"
 
+json2xml@^0.1.3:
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/json2xml/-/json2xml-0.1.3.tgz#9ae7c220bedd7c66a668e26f7ac182f6704eca21"
+  integrity sha512-yfTe9HnbrE3oRUEQL9mn7BueLd7RCTb7ig/mAFI6xY4RNYOEXF26x0qHFR7mb8ZrKgfE57wxkq0N3TboyFm6UA==
+
 json5@^1.0.1, json5@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/json5/-/json5-1.0.2.tgz#63d98d60f21b313b77c4d6da18bfa69d80e1d593"
@@ -15118,6 +15171,23 @@ lazystream@^1.0.0:
   integrity sha512-b94GiNHQNy6JNTrt5w6zNyffMrNkXZb3KTkCZJb2V1xaEGCk093vkZ2jk3tpaeP33/OiXC+WvK9AxUebnf5nbw==
   dependencies:
     readable-stream "^2.0.5"
+
+leasot@^12.0.0:
+  version "12.5.0"
+  resolved "https://registry.yarnpkg.com/leasot/-/leasot-12.5.0.tgz#d2b0273d0eaa3fc20ded2ede81b46b9c6f158451"
+  integrity sha512-bx2hqCDZ6EVzdaM+aIBNO12Ff0BscGVWPf23Wzj5FLCEXZuJR729Wn5Naom8dJcqpEbsk2XXzvdHus/3WZqW5w==
+  dependencies:
+    async "^3.2.0"
+    chalk "^4.1.0"
+    commander "^7.2.0"
+    eol "^0.9.1"
+    get-stdin "^8.0.0"
+    globby "^11.0.3"
+    json2xml "^0.1.3"
+    lodash "^4.17.21"
+    log-symbols "^4.1.0"
+    strip-ansi "^6.0.0"
+    text-table "^0.2.0"
 
 lerna@^4.0.0:
   version "4.0.0"
