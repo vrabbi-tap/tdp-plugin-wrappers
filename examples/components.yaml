@@ -1,0 +1,109 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/kubernetes-label-selector: app=kapp-controller
+    backstage.io/source-location: url:https://github.com/carvel-dev/kapp-controller/blob/develop/
+    github.com/project-slug: 'carvel-dev/kapp-controller'
+    prometheus.io/rule: sum by (name) (carvel_packageinstall_info{status="True"}),sum by (name) (carvel_packageinstall_info{status="False"}),sum(container_memory_usage_bytes{pod=~"kapp-controller-.*"}) by (pod),sum(node_namespace_pod_container:container_cpu_usage_seconds_total:sum_irate{pod=~"kapp-controller-.*"}) by (pod)
+    'backstage.io/techdocs-ref': url:https://github.com/TeraSky-TAP/vrabbi-components/tree/main/carvel/kapp-controller
+    goharbor.io/repository-slug: carvel-dev/kapp-controller
+  description: Kapp Controller - A GitOps and Package Management controller from Carvel
+  name: kapp-controller
+  title: Carvel Kapp Controller
+  tags:
+  - v1alpha1
+spec:
+  lifecycle: production
+  owner: tanzu-admins
+  system: carvel
+  type: service
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/kubernetes-label-selector: app=secretgen-controller
+    github.com/project-slug: 'carvel-dev/secretgen-controller'
+    backstage.io/source-location: url:https://github.com/carvel-dev/secretgen-controller/blob/develop/
+    prometheus.io/rule: sum(container_memory_usage_bytes{pod=~"secretgen-controller-.*"}) by (pod),sum(node_namespace_pod_container:container_cpu_usage_seconds_total:sum_irate{pod=~"secretgen-controller-.*"}) by (pod)
+    'backstage.io/techdocs-ref': url:https://github.com/TeraSky-TAP/vrabbi-components/tree/main/carvel/secretgen-controller
+    goharbor.io/repository-slug: carvel-dev/secretgen-controller
+  description: Secret generation and templating controller from Carvel
+  name: secretgen-controller
+  title: Carvel SecretGen Controller
+  tags:
+  - v1alpha1
+spec:
+  lifecycle: production
+  owner: tanzu-admins
+  system: carvel
+  type: service
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/kubernetes-label-selector: app.kubernetes.io/part-of=pacman
+    prometheus.io/rule: sum(rate(container_cpu_usage_seconds_total{pod=~"^pacman-.*-deployment.*"}[1m])) by (pod)
+    grafana/dashboard-selector: pacman
+    goharbor.io/repository-slug: tap/workloads/pacman-tdp
+    github.com/project-slug: vrabbi/js-pacman
+    janus-idp.io/tekton: pacman
+  description: Sample Javascript Based Pacman Using Kaniko
+  name: pacman
+  title: Pacman
+  tags:
+  - v1alpha1
+spec:
+  lifecycle: production
+  owner: platform-team
+  system: demo-apps
+  type: service
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/kubernetes-label-selector: app.kubernetes.io/part-of=demo-app
+    prometheus.io/rule: container_cpu_usage_seconds_total{pod=~"^demo-app-.*-deployment.*"}
+    goharbor.io/repository-slug: tap/workloads/demo-app-tdp
+    grafana/dashboard-selector: demo-app
+    github.com/project-slug: vrabbi/java-web-app
+  description: Tanzu Java Web App Demo
+  title: Demo Java App
+  name: demo-app
+  tags:
+  - v1alpha1
+spec:
+  lifecycle: production
+  owner: platform-team
+  system: demo-apps
+  type: service
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  links:
+    - url: https://petclinic.tdp.tap-17.terasky.demo
+      title: Application
+      icon: dashboard
+  annotations:
+    backstage.io/kubernetes-label-selector: app.kubernetes.io/part-of=petclinic
+    prometheus.io/rule: sum(rate(container_network_receive_packets_total{pod=~"^petclinic-.*-deployment.*"}[1m])) by (pod),sum(rate(container_network_transmit_packets_total{pod=~"^petclinic-.*-deployment.*"}[1m])) by (pod)
+    goharbor.io/repository-slug: tap/workloads/petclinic-tdp
+    grafana/dashboard-selector: petclinic
+    github.com/project-slug: vrabbi/spring-petclinic
+    backstage.io/techdocs-ref: url:https://github.com/vrabbi/spring-petclinic/tree/main
+  description: Spring Petclinic
+  title: Spring Petclinic
+  name: petclinic
+  tags:
+  - v1alpha1
+spec:
+  lifecycle: production
+  owner: platform-team
+  system: demo-apps
+  type: service
+  providesApis:
+  - tdp/petclinic-db424db5

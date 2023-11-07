@@ -1,41 +1,47 @@
+apiVersion: backstage.io/v1alpha1
+kind: Domain
+metadata:
+  name: tanzu
+  description: Everything related to the Tanzu Application Platform
+  links:
+    - url: https://www.vrabbi.cloud/post/category/tap/
+      title: vRabbi TAP Blogs
+      icon: docs
+    - url: https://vrabbi.cloud/post/category/tkg/
+      title: vRabbi TKG Blogs
+      icon: docs
+    - url: https://vrabbi.cloud/post/category/carvel/
+      title: vRabbi Carvel Blogs
+      icon: docs
+    - url: https://docs.vmware.com/en/VMware-Tanzu-Application-Platform/index.html
+      title: Official TAP Documentation
+      icon: docs
+    - url: https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/index.html
+      title: Official TKG Documentation
+      icon: docs
+    - url: https://docs.vmware.com/en/VMware-Tanzu-Mission-Control/index.html
+      title: Official TMC Documentation
+      icon: docs
+    - url: https://carvel.dev
+      title: Official Carvel Documentation
+      icon: docs
+spec:
+  owner: cna-team
 ---
-# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-system
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
-  name: examples
+  description: Demo Applications
+  name: carvel
 spec:
-  owner: guests
+  domain: tanzu
+  owner: tanzu-admins
 ---
-# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-component
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: System
 metadata:
-  name: example-website
+  description: Demo Applications
+  name: demo-apps
 spec:
-  type: website
-  lifecycle: experimental
-  owner: guests
-  system: examples
-  providesApis: [example-grpc-api]
----
-# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-api
-apiVersion: backstage.io/v1alpha1
-kind: API
-metadata:
-  name: example-grpc-api
-spec:
-  type: grpc
-  lifecycle: experimental
-  owner: guests
-  system: examples
-  definition: |
-    syntax = "proto3";
-
-    service Exampler {
-      rpc Example (ExampleMessage) returns (ExampleMessage) {};
-    }
-
-    message ExampleMessage {
-      string example = 1;
-    };
+  domain: tanzu
+  owner: tanzu-admins
