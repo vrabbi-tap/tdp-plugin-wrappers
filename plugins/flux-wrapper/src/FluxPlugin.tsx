@@ -3,6 +3,8 @@ import {
   EntityFluxGitRepositoriesCard,
   EntityFluxOCIRepositoriesCard,
   EntityFluxHelmRepositoriesCard,
+  EntityFluxKustomizationsCard,
+  EntityFluxHelmReleasesCard,
 } from '@weaveworksoss/backstage-plugin-flux';
 import { AppPluginInterface, AppRouteSurface, EntityPageSurface } from '@vmware-tanzu/core-frontend';
 import { SurfaceStoreInterface } from '@vmware-tanzu/core-common';
@@ -26,6 +28,12 @@ export const FluxPlugin: AppPluginInterface =
                   </Grid>
                   <Grid item md={12}>
                     <EntityFluxOCIRepositoriesCard />
+                  </Grid>
+                  <Grid item md={12}>
+                    <EntityFluxKustomizationsCard />
+                  </Grid>
+                  <Grid item md={12}>
+                    <EntityFluxHelmReleasesCard />
                   </Grid>
                 </Grid>
           </EntityLayout.Route>,
