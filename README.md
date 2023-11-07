@@ -4,32 +4,18 @@ In this repo you will find plugin wrappers built and tested for TAP 1.7 based on
 An [example TDP Config file](./sample-tdp-config-file.yaml) is provided as well.  
 
 ## Existing Wrappers
-1. [Github Insights](./plugins/github-insights-wrapper) - [Source Plugin](https://github.com/RoadieHQ/roadie-backstage-plugins/blob/main/plugins/frontend/backstage-plugin-github-insights/README.md)
-2. [Github Pull Requests](./plugins/github-pull-requests-wrapper) - [Source Plugin](https://github.com/RoadieHQ/roadie-backstage-plugins/blob/main/plugins/frontend/backstage-plugin-github-pull-requests/README.md)
-3. [Github Actions](./plugins/github-actions-wrapper) - [Source Plugin](https://github.com/backstage/backstage/blob/master/plugins/github-actions/README.md)
-4. [Todo Frontend](./plugins/todo-wrapper) - [Source Plugin](https://github.com/backstage/backstage/blob/master/plugins/todo/README.md)
-5. [Todo Backend](./plugins/todo-wrapper-backend) - [Source Plugin](https://github.com/backstage/backstage/blob/master/plugins/todo-backend/README.md)
-6. [Harbor Frontend](./plugins/harbor-plugin-wrapper) - [Source Plugin](https://github.com/container-registry/backstage-plugin-harbor/blob/master/README.md)
-7. [Harbor Backend](./plugins/harbor-plugin-wrapper-backend) - [Source Plugin](https://github.com/container-registry/backstage-plugin-harbor-backend)
-8. [FluxCD](./plugins/flux-wrapper) - [Source Plugin](https://github.com/weaveworks/weaveworks-backstage/blob/main/plugins/backstage-plugin-flux/README.md)
-9. [Tekton](./plugins/tekton-wrapper) - [Source Plugin](https://github.com/janus-idp/backstage-plugins/blob/main/plugins/tekton/README.md)
-10. [ChatGPT Frontend](./plugins/chatgpt-wrapper) - [Source Plugin](https://github.com/enfuse/backstage-chatgpt-plugin/blob/main/README.md)
-11. [ChatGPT Backend](./plugins/chatgpt-wrapper-backend) - [Source Plugin](https://github.com/enfuse/backstage-chatgpt-backend)
-12. [Developer Toolbox](./plugins/dev-toolbox-wrapper) - [Source Plugin](https://github.com/drodil/backstage-plugin-toolbox/blob/main/README.md)
-  
-## Published Wrappers
-1. [Github Insights](https://www.npmjs.com/package/@vrabbi/github-insights-wrapper)
-2. [Github Pull Requests](https://www.npmjs.com/package/@vrabbi/github-pull-requests-wrapper)
-3. [Github Actions](https://www.npmjs.com/package/@vrabbi/github-actions-wrapper)
-4. [Todo Frontend](https://www.npmjs.com/package/@vrabbi/todo-wrapper)
-5. [Todo Backend](https://www.npmjs.com/package/@vrabbi/todo-wrapper-backend) 
-6. [Harbor Frontend](https://www.npmjs.com/package/@vrabbi/harbor-plugin-wrapper)
-7. [Harbor Backend](https://www.npmjs.com/package/@vrabbi/harbor-plugin-wrapper-backend)
-8. [FluxCD](https://www.npmjs.com/package/@vrabbi/flux-wrapper)
-9. [Tekton Pipelines](https://www.npmjs.com/package/@vrabbi/tekton-wrapper)
-10. [ChatGPT Frontend](https://www.npmjs.com/package/@vrabbi/chatgpt-wrapper)
-11. [ChatGPT Backend](https://www.npmjs.com/package/@vrabbi/chatgpt-wrapper-backend)
-12. [Developer Toolbox](https://www.npmjs.com/package/@vrabbi/dev-toolbox-wrapper)
+1. **Github Insights** - [Wrapper Code](./plugins/github-insights-wrapper) - [Source Plugin Repo](https://github.com/RoadieHQ/roadie-backstage-plugins/blob/main/plugins/frontend/backstage-plugin-github-insights/README.md) - [Published Package](https://www.npmjs.com/package/@vrabbi/github-insights-wrapper)
+2. **Github Pull Requests** - [Wrapper Code](./plugins/github-pull-requests-wrapper) - [Source Plugin Repo](https://github.com/RoadieHQ/roadie-backstage-plugins/blob/main/plugins/frontend/backstage-plugin-github-pull-requests/README.md) - [Published Package](https://www.npmjs.com/package/@vrabbi/github-pull-requests-wrapper)
+3. **Github Actions** - [Wrapper Code](./plugins/github-actions-wrapper) - [Source Plugin Repo](https://github.com/backstage/backstage/blob/master/plugins/github-actions/README.md) - [Published Package](https://www.npmjs.com/package/@vrabbi/github-actions-wrapper)
+4. **Todo Frontend** - [Wrapper Code](./plugins/todo-wrapper) - [Source Plugin Repo](https://github.com/backstage/backstage/blob/master/plugins/todo/README.md) - [Published Package](https://www.npmjs.com/package/@vrabbi/todo-wrapper)
+5. **Todo Backend** - [Wrapper Code](./plugins/todo-wrapper-backend) - [Source Plugin Repo](https://github.com/backstage/backstage/blob/master/plugins/todo-backend/README.md) - [Published Package](https://www.npmjs.com/package/@vrabbi/todo-wrapper-backend) 
+6. **Harbor Frontend** - [Wrapper Code](./plugins/harbor-plugin-wrapper) - [Source Plugin Repo](https://github.com/container-registry/backstage-plugin-harbor/blob/master/README.md) - [Published Package](https://www.npmjs.com/package/@vrabbi/harbor-plugin-wrapper)
+7. **Harbor Backend** - [Wrapper Code](./plugins/harbor-plugin-wrapper-backend) - [Source Plugin Repo](https://github.com/container-registry/backstage-plugin-harbor-backend) - [Published Package](https://www.npmjs.com/package/@vrabbi/harbor-plugin-wrapper-backend)
+8. **FluxCD** - [Wrapper Code](./plugins/flux-wrapper) - [Source Plugin Repo](https://github.com/weaveworks/weaveworks-backstage/blob/main/plugins/backstage-plugin-flux/README.md) - [Published Package](https://www.npmjs.com/package/@vrabbi/flux-wrapper)
+9. **Tekton** - [Wrapper Code](./plugins/tekton-wrapper) - [Source Plugin Repo](https://github.com/janus-idp/backstage-plugins/blob/main/plugins/tekton/README.md) - [Published Package](https://www.npmjs.com/package/@vrabbi/tekton-wrapper)
+10. **ChatGPT Frontend** - [Wrapper Code](./plugins/chatgpt-wrapper) - [Source Plugin Repo](https://github.com/enfuse/backstage-chatgpt-plugin/blob/main/README.md) - [Published Package](https://www.npmjs.com/package/@vrabbi/chatgpt-wrapper)
+11. **ChatGPT Backend** - [Wrapper Code](./plugins/chatgpt-wrapper-backend) - [Source Plugin Repo](https://github.com/enfuse/backstage-chatgpt-backend) - [Published Package](https://www.npmjs.com/package/@vrabbi/chatgpt-wrapper-backend)
+12. **Developer Toolbox** - [Wrapper Code](./plugins/dev-toolbox-wrapper) - [Source Plugin Repo](https://github.com/drodil/backstage-plugin-toolbox/blob/main/README.md) - [Published Package](https://www.npmjs.com/package/@vrabbi/dev-toolbox-wrapper)
   
 ## Planned Wrappers
 1. ArgoCD
