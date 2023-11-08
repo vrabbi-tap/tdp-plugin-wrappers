@@ -1,0 +1,44 @@
+{
+  "name": "@vrabbi/backstage-devtools-wrapper",
+  "version": "0.1.1",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public",
+    "main": "dist/index.esm.js",
+    "types": "dist/index.d.ts"
+  },
+  "backstage": {
+    "role": "frontend-plugin"
+  },
+  "sideEffects": false,
+  "scripts": {
+    "start": "backstage-cli package start",
+    "build": "backstage-cli package build",
+    "lint": "backstage-cli package lint",
+    "test": "backstage-cli package test",
+    "clean": "backstage-cli package clean",
+    "prepack": "backstage-cli package prepack",
+    "postpack": "backstage-cli package postpack"
+  },
+  "dependencies": {
+    "@backstage/core-components": "^0.13.2",
+    "@backstage/core-plugin-api": "^1.5.2",
+    "@backstage/plugin-devtools": "0.1.5",
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "4.11.3",
+    "@vmware-tanzu/core-frontend": "*",
+    "react-router": "6.0.0-beta.0"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1 || ^17.0.0",
+    "react-router": "6.0.0-beta.0"
+  },
+  "devDependencies": {
+    "@backstage/cli": "^0.22.8"
+  },
+  "files": [
+    "dist"
+  ]
+}
