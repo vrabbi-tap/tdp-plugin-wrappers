@@ -33,7 +33,7 @@ An [example TDP Config file](./sample-tdp-config-file.yaml) is provided as well.
 
   
 ## Plugins With Needed Config In TAP Values:
-### Github Insights, Github Actions, Github Pull Requests, Security Insights
+### Github Insights, Github Actions, Github Pull Requests, Security Insights, Github Issues
 Require Github Integration be configured
 ### Harbor
 under app_config in TAP GUI section you must add the following:
@@ -89,8 +89,27 @@ prometheus:
   uiUrl: http://YOUR_PROMETHEUS_FQDN_INCLUDING_PORT
 ```
 
+### Jenkins
+under app_config we must add a jenkins section with the details of our jenkins server/s:  
+This example is for a single jenkins server, but multiple can be configured. chheck the source plugins docs for more information.  
+```yaml
+jenkins:
+  baseUrl: JENKINS_URL
+  username: JENKINS_USER_NAME
+  apiKey: JENKINS_API_KEY
+```  
+
+### Azure DevOps
+under app_config we must add a dedicated section for our ADO configuration:  
+```yaml
+azureDevOps:
+  host: dev.azure.com
+  token: YOUR_AZURE_TOKEN
+  organization: YOUR_ORG
+```
+  
 ## Annotations on catalog-info.yaml files
-### Github Insights, Github Actions, Github Pull Requests
+### Github Insights, Github Actions, Github Pull Requests, Github Issues
 ```yaml
 annotations:
   github.com/project-slug: REPO_SLUG
@@ -158,4 +177,26 @@ for example:
 ```yaml
 annotations:
   prometheus.io/rule: memUsage|component,node_memory_active_bytes|instance,sum by (instance) (node_cpu_seconds_total)
+```  
+
+### Jenkins
+```yaml
+annotations:
+  jenkins.io/job-full-name: JOB_PATH_IN_JENKINS
+```  
+for example:  
+```yaml
+annotations:
+  jenkins.io/job-full-name: teamA/artistLookup-build
+```  
+
+### Azure DevOps
+```yaml
+annotations:
+  dev.azure.com/project-repo: ADO_PROJECT/ADO_REPO
+```  
+for example:
+```yaml
+annotations:
+  dev.azure.com/project-repo: my-project/my-repo
 ```  
