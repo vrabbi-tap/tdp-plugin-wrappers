@@ -23,7 +23,9 @@ An [example TDP Config file](./sample-tdp-config-file.yaml) is provided as well.
 17. **Backstage Dev Tools Backend** - [Wrapper Code](./plugins/backstage-devtools-wrapper-backend) - [Source Plugin Repo](https://github.com/backstage/backstage/blob/master/plugins/devtools-backend/README.md) - [Published Package](https://www.npmjs.com/package/@vrabbi/backstage-devtools-wrapper-backend)
 18. **Tech Radar** - [Wrapper Code](./plugins/tech-radar-wrapper) - [Source Plugin Repo](https://github.com/backstage/backstage/blob/master/plugins/tech-radar/README.md) - [Published Package](https://www.npmjs.com/package/@vrabbi/tech-radar-wrapper)
 19. **Tech Insights Frontend** - [Wrapper Code](./plugins/tech-insights-wrapper) - [Source Plugin Repo](https://github.com/backstage/backstage/blob/master/plugins/tech-insights/README.md) - [Published Package](https://www.npmjs.com/package/@vrabbi/tech-insights-wrapper)
-19. **Tech Insights Backend** - [Wrapper Code](./plugins/tech-insights-wrapper-backend) - [Source Plugin Repo](https://github.com/backstage/backstage/blob/master/plugins/tech-insights-backend/README.md) - [Published Package](https://www.npmjs.com/package/@vrabbi/tech-insights-wrapper-backend)
+20. **Tech Insights Backend** - [Wrapper Code](./plugins/tech-insights-wrapper-backend) - [Source Plugin Repo](https://github.com/backstage/backstage/blob/master/plugins/tech-insights-backend/README.md) - [Published Package](https://www.npmjs.com/package/@vrabbi/tech-insights-wrapper-backend)
+21. **Securiy Insights** - [Wrapper Code](./plugins/security-insights-wrapper) - [Source Plugin Repo](https://github.com/RoadieHQ/roadie-backstage-plugins/blob/main/plugins/frontend/backstage-plugin-security-insights/README.md) - [Published Package](https://www.npmjs.com/package/@vrabbi/security-insights-wrapper)
+
   
 ## Plugins With Needed Config In TAP Values:
 ### Github Insights, Github Actions, Github Pull Requests, Security Insights

@@ -15,9 +15,6 @@ import React from 'react';
         <DevToolsLayout.Route path="external-dependencies" title="External Dependencies">
           <ExternalDependenciesContent />
         </DevToolsLayout.Route>
-        <DevToolsLayout.Route path="unprocessed-entities" title="Unprocessed Entities">
-          <UnprocessedEntitiesContent />
-        </DevToolsLayout.Route>
       </DevToolsLayout>
     );
   };

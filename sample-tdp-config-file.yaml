@@ -8,6 +8,8 @@ app:
       version: '0.1.0'
     - name: '@vrabbi/github-insights-wrapper'
       version: '0.1.2'
+    - name: '@vrabbi/security-insights-wrapper'
+      version: '0.1.0'
     - name: '@vrabbi/github-pull-requests-wrapper'
       version: '0.1.0'
     - name: '@vrabbi/github-actions-wrapper'
@@ -27,7 +29,7 @@ app:
     - name: '@vrabbi/k8s-gpt-wrapper'
       version: '0.1.0'
     - name: '@vrabbi/backstage-devtools-wrapper'
-      version: '0.2.0'
+      version: '0.2.1'
     - name: '@vrabbi/tech-radar-wrapper'
       version: '0.1.0'
 backend:
