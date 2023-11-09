@@ -11,3 +11,4 @@ Your plugin has been added to the example app in this repository, meaning you'll
 You can also serve the plugin in isolation by running `yarn start` in the plugin directory.
 This method of serving the plugin provides quicker iteration speed and a faster startup and hot reloads.
 It is only meant for local development, and the setup for it can be found inside the [/dev](./dev) directory.
+![techinsights](https://github.com/vrabbi-tap/tdp-plugin-wrappers/assets/48493016/6c02abd5-cead-4bb4-a0f9-f75b9014f43d)
