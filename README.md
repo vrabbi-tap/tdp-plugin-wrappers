@@ -26,7 +26,7 @@ An [example TDP Config file](./sample-tdp-config-file.yaml) is provided as well.
 19. **Tech Insights Backend** - [Wrapper Code](./plugins/tech-insights-wrapper-backend) - [Source Plugin Repo](https://github.com/backstage/backstage/blob/master/plugins/tech-insights-backend/README.md) - [Published Package](https://www.npmjs.com/package/@vrabbi/tech-insights-wrapper-backend)
   
 ## Plugins With Needed Config In TAP Values:
-### Github Insights, Github Actions, Github Pull Requests
+### Github Insights, Github Actions, Github Pull Requests, Security Insights
 Require Github Integration be configured
 ### Harbor
 under app_config in TAP GUI section you must add the following:
