@@ -44,10 +44,40 @@ openai:
 Requires the kubernetes plugin be configured
 
 ### Grafana
-TBD
+under app_config we must add values to the proxy section as well as a dedicated section for Grafana:  
+```yaml
+proxy:
+  '/grafana/api':
+    # May be a public or an internal DNS
+    target: https://YOUR_GRAFANA_FQDN
+    headers:
+      Authorization: Bearer YOUR_GRAFANA_TOKEN
+
+grafana:
+  # Publicly accessible domain
+  domain: https://YOUR_GRAFANA_FQDN
+
+  # Is unified alerting enabled in Grafana?
+  # See: https://grafana.com/blog/2021/06/14/the-new-unified-alerting-system-for-grafana-everything-you-need-to-know/
+  # Optional. Default: false
+  unifiedAlerting: false
+```  
 
 ### Prometheus
-TBD
+under app_config we must add values to the proxy section as well as a dedicated section for prometheus:
+```yaml
+proxy:
+  '/prometheus/api':
+    # url to the api and path of your hosted prometheus instance
+    target: http://YOUR_PROMETHEUS_FQDN_INCLUDING_PORT/api/v1/
+    changeOrigin: true
+    secure: false
+
+# Defaults to /prometheus/api and can be omitted if proxy is configured for that url
+prometheus:
+  proxyPath: /prometheus/api
+  uiUrl: http://YOUR_PROMETHEUS_FQDN_INCLUDING_PORT
+```
 
 ## Annotations on catalog-info.yaml files
 ### Github Insights, Github Actions, Github Pull Requests
@@ -99,6 +129,23 @@ annotations:
   janus-idp.io/tekton: pacman
 ```  
 ### Grafana
-TBD
+```yaml
+annotations:
+  grafana/dashboard-selector: PLUGIN_SELECTOR_SYNTAX
+```  
+for example:
+```yaml
+annotations:
+  grafana/dashboard-selector: "(tags @> 'my-service' || tags @> 'my-service-slo') && tags @> 'generated'"
+```  
+
 ### Prometheus
-TBD
+```yaml
+annotations:
+  prometheus.io/rule: PROMETHEUS_RULE_OR_DIRECT_QUERY
+```  
+for example:  
+```yaml
+annotations:
+  prometheus.io/rule: memUsage|component,node_memory_active_bytes|instance,sum by (instance) (node_cpu_seconds_total)
+```  
