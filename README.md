@@ -17,6 +17,10 @@ An [example TDP Config file](./sample-tdp-config-file.yaml) is provided as well.
 11. **ChatGPT Backend** - [Wrapper Code](./plugins/chatgpt-wrapper-backend) - [Source Plugin Repo](https://github.com/enfuse/backstage-chatgpt-backend) - [Published Package](https://www.npmjs.com/package/@vrabbi/chatgpt-wrapper-backend)
 12. **Developer Toolbox** - [Wrapper Code](./plugins/dev-toolbox-wrapper) - [Source Plugin Repo](https://github.com/drodil/backstage-plugin-toolbox/blob/main/README.md) - [Published Package](https://www.npmjs.com/package/@vrabbi/dev-toolbox-wrapper)
 13. **K8sGPT** - [Wrapper Code](./plugins/k8s-gpt-wrapper) - [Source Plugin Repo](https://github.com/suxess-it/backstage-plugin-k8sgpt/blob/main/README.md) - [Published Package](https://www.npmjs.com/package/@vrabbi/k8s-gpt-wrapper)
+14. **Grafana** - [Wrapper Code](./plugins/grafana-wrapper) - [Source Plugin Repo](https://github.com/K-Phoen/backstage-plugin-grafana) - [Published Package](https://www.npmjs.com/package/@vrabbi/grafana-wrapper)
+15. **Prometheus** - [Wrapper Code](./plugins/prometheus-wrapper) - [Source Plugin Repo](https://github.com/RoadieHQ/roadie-backstage-plugins/blob/main/plugins/frontend/backstage-plugin-prometheus/README.md) - [Published Package](https://www.npmjs.com/package/@vrabbi/prometheus-wrapper)
+16. **Backstage Dev Tools Frontend** - [Wrapper Code](./plugins/backstage-devtools-wrapper) - [Source Plugin Repo](https://github.com/backstage/backstage/blob/master/plugins/devtools/README.md) - [Published Package](https://www.npmjs.com/package/@vrabbi/backstage-devtools-wrapper)
+17. **Backstage Dev Tools Backend** - [Wrapper Code](./plugins/backstage-devtools-wrapper-backend) - [Source Plugin Repo](https://github.com/backstage/backstage/blob/master/plugins/devtools-backend/README.md) - [Published Package](https://www.npmjs.com/package/@vrabbi/backstage-devtools-wrapper-backend)
   
 ## Plugins With Needed Config In TAP Values:
 ### Github Insights, Github Actions, Github Pull Requests
@@ -39,6 +43,11 @@ openai:
 ### FluxCD and Tekton
 Requires the kubernetes plugin be configured
 
+### Grafana
+TBD
+
+### Prometheus
+TBD
 
 ## Annotations on catalog-info.yaml files
 ### Github Insights, Github Actions, Github Pull Requests
@@ -89,3 +98,7 @@ for example:
 annotations:
   janus-idp.io/tekton: pacman
 ```  
+### Grafana
+TBD
+### Prometheus
+TBD

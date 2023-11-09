@@ -1,0 +1,1 @@
+export { PrometheusPlugin as plugin } from './PrometheusPlugin'

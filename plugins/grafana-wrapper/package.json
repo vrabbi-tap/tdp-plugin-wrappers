@@ -1,0 +1,47 @@
+{
+  "name": "@vrabbi/grafana-wrapper",
+  "version": "0.1.0",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public",
+    "main": "dist/index.esm.js",
+    "types": "dist/index.d.ts"
+  },
+  "backstage": {
+    "role": "frontend-plugin"
+  },
+  "sideEffects": false,
+  "scripts": {
+    "start": "backstage-cli package start",
+    "build": "backstage-cli package build",
+    "lint": "backstage-cli package lint",
+    "test": "backstage-cli package test",
+    "clean": "backstage-cli package clean",
+    "prepack": "backstage-cli package prepack",
+    "postpack": "backstage-cli package postpack"
+  },
+  "dependencies": {
+    "@backstage/core-components": "^0.13.2",
+    "@backstage/core-plugin-api": "^1.5.2",
+    "@k-phoen/backstage-plugin-grafana": "^0.1.22",
+    "@backstage/plugin-catalog": "^1.11.2",
+    "@vmware-tanzu/core-common": "^1.0.0",
+    "@vmware-tanzu/core-frontend": "^1.0.0",
+    "@material-ui/core": "^4.12.4"
+  },
+  "peerDependencies": {
+    "@vmware-tanzu/core-frontend": "*",
+    "@vmware-tanzu/core-common": "^1.0.0",
+    "react": "^17.0.2",
+    "react-router": "6.0.0-beta.0"
+  },
+  "devDependencies": {
+    "@backstage/cli": "^0.22.8",
+    "@backstage/core-app-api": "^1.8.1"
+  },
+  "files": [
+    "dist"
+  ]
+}
