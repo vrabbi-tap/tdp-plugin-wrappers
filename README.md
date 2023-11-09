@@ -25,6 +25,11 @@ An [example TDP Config file](./sample-tdp-config-file.yaml) is provided as well.
 19. **Tech Insights Frontend** - [Wrapper Code](./plugins/tech-insights-wrapper) - [Source Plugin Repo](https://github.com/backstage/backstage/blob/master/plugins/tech-insights/README.md) - [Published Package](https://www.npmjs.com/package/@vrabbi/tech-insights-wrapper)
 20. **Tech Insights Backend** - [Wrapper Code](./plugins/tech-insights-wrapper-backend) - [Source Plugin Repo](https://github.com/backstage/backstage/blob/master/plugins/tech-insights-backend/README.md) - [Published Package](https://www.npmjs.com/package/@vrabbi/tech-insights-wrapper-backend)
 21. **Securiy Insights** - [Wrapper Code](./plugins/security-insights-wrapper) - [Source Plugin Repo](https://github.com/RoadieHQ/roadie-backstage-plugins/blob/main/plugins/frontend/backstage-plugin-security-insights/README.md) - [Published Package](https://www.npmjs.com/package/@vrabbi/security-insights-wrapper)
+22. **Azure DevOps Frontend** - [Wrapper Code](./plugins/azure-devops-wrapper) - [Source Plugin Repo](https://github.com/backstage/backstage/blob/master/plugins/azure-devops/README.md) - [Published Package](https://www.npmjs.com/package/@vrabbi/azure-devops-wrapper)
+23. **Azure DevOps Backend** - [Wrapper Code](./plugins/azure-devops-wrapper-backend) - [Source Plugin Repo](https://github.com/backstage/backstage/blob/master/plugins/azure-devops-backend/README.md) - [Published Package](https://www.npmjs.com/package/@vrabbi/azure-devops-wrapper-backend)
+24. **Github Issues** - [Wrapper Code](./plugins/github-issues-wrapper) - [Source Plugin Repo](https://github.com/backstage/backstage/blob/master/plugins/github-issues/README.md) - [Published Package](https://www.npmjs.com/package/@vrabbi/github-issues-wrapper)
+25. **Jenkins Frontend** - [Wrapper Code](./plugins/jenkins-wrapper) - [Source Plugin Repo](https://github.com/backstage/backstage/blob/master/plugins/jenkins/README.md) - [Published Package](https://www.npmjs.com/package/@vrabbi/jenkins-wrapper)
+26. **Jenkins Backend** - [Wrapper Code](./plugins/jenkins-wrapper-backend) - [Source Plugin Repo](https://github.com/backstage/backstage/blob/master/plugins/jenkins-backend/README.md) - [Published Package](https://www.npmjs.com/package/@vrabbi/jenkins-wrapper-backend)
 
   
 ## Plugins With Needed Config In TAP Values:
