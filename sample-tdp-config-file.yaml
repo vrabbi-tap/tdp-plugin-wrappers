@@ -38,6 +38,8 @@ app:
       version: '0.2.1'
     - name: '@vrabbi/tech-radar-wrapper'
       version: '0.1.0'
+    - name: '@vrabbi/kubecost-wrapper'
+      version: '0.1.0'
 backend:
   plugins:
     - name: '@vrabbi/tech-insights-wrapper-backend'
