@@ -17,7 +17,7 @@ app:
     - name: '@vrabbi/github-actions-wrapper'
       version: '0.1.0'
     - name: '@vrabbi/azure-devops-wrapper'
-      version: '0.1.0'
+      version: '0.1.1'
     - name: '@vrabbi/tekton-wrapper'
       version: '0.1.2'
     - name: '@vrabbi/jenkins-wrapper'
@@ -37,8 +37,6 @@ app:
     - name: '@vrabbi/backstage-devtools-wrapper'
       version: '0.2.1'
     - name: '@vrabbi/tech-radar-wrapper'
-      version: '0.1.0'
-    - name: '@vrabbi/kubecost-wrapper'
       version: '0.1.0'
 backend:
   plugins:

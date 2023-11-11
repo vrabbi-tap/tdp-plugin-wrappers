@@ -21,15 +21,6 @@ export const AzureDevOpsFrontendPlugin: AppPluginInterface =
           </EntityLayout.Route>,
         );
         entityPageSurface.servicePage.addTab(
-          <EntityLayout.Route if={isAzureDevOpsAvailable} path="/ado-readme" title="Azure DevOps README">
-            <Grid container spacing={3} alignItems="stretch">
-              <Grid item md={12}>
-                <EntityAzureReadmeCard maxHeight={350} />
-              </Grid>
-            </Grid>
-          </EntityLayout.Route>,
-        );
-        entityPageSurface.servicePage.addTab(
           <EntityLayout.Route if={isAzureDevOpsAvailable} path="/ado-pipelines" title="Azure DevOps Pipelines">
             <EntityAzurePipelinesContent defaultLimit={25} />
           </EntityLayout.Route>,
