@@ -32,7 +32,6 @@ An [example TDP Config file](./sample-tdp-config-file.yaml) is provided as well.
 | **Dev Tools**             | **Toolbox**                 | **Frontend**    | [Wrapper Code](./plugins/dev-toolbox-wrapper)                | [Source Plugin Repo](https://github.com/drodil/backstage-plugin-toolbox/blob/main/README.md)                                                          | [Published Package](https://www.npmjs.com/package/@vrabbi/dev-toolbox-wrapper)                |
 | **Operations**            | **Backstage Dev Tools**     | **Frontend**    | [Wrapper Code](./plugins/backstage-devtools-wrapper)         | [Source Plugin Repo](https://github.com/backstage/backstage/blob/master/plugins/devtools/README.md)                                                   | [Published Package](https://www.npmjs.com/package/@vrabbi/backstage-devtools-wrapper)         |
 |                           |                             | **Backend**     | [Wrapper Code](./plugins/backstage-devtools-wrapper-backend) | [Source Plugin Repo](https://github.com/backstage/backstage/blob/master/plugins/devtools-backend/README.md)                                           | [Published Package](https://www.npmjs.com/package/@vrabbi/backstage-devtools-wrapper-backend) |
-| **FinOps**                | **Kube Cost**               | **Frontend**    | [Wrapper Code](./plugins/kubecost-wrapper)                   | [Source Plugin](https://github.com/suxess-it/backstage-plugin-kubecost/blob/main/README.md)                                                           | [Published Wrapper](https://www.npmjs.com/package/@vrabbi/kubecost-wrapper)                   |
   
 ## Plugins With Needed Config In TAP Values:
 ### Github Insights, Github Actions, Github Pull Requests, Security Insights, Github Issues
@@ -108,15 +107,6 @@ azureDevOps:
   host: dev.azure.com
   token: YOUR_AZURE_TOKEN
   organization: YOUR_ORG
-```
-  
-### KubeCost
-under app_config we must add a dedicated section for our Kubecost configuration:
-```yaml
-kubecost:
-  baseUrl: https://<base URL to Kubecost> 
-  sharedNamespaces: <comma-separated list of namespaces>
-  queryframes: month,lastweek,week,yesterday,today
 ```
   
 ## Annotations on catalog-info.yaml files
@@ -210,16 +200,5 @@ for example:
 ```yaml
 annotations:
   dev.azure.com/project-repo: my-project/my-repo
-```  
-
-### KubeCost
-```yaml
-annotations:
-  kubecost.com/deployment-name: 'KUBERNETES_DEPLOYMENT_NAME' # This must be added as a label on your kubernetes deployments as "app: KUBERNETES_DEPLOYMENT_NAME"
-``` 
-for example:  
-```yaml
-annotations:
-  kubecost.com/deployment-name: my-app
 ```  
 
