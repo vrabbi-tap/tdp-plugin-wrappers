@@ -38,6 +38,8 @@ app:
       version: '0.2.1'
     - name: '@vrabbi/tech-radar-wrapper'
       version: '0.1.0'
+    - name: '@vrabbi/vault-wrapper'
+      version: '0.1.0'
 backend:
   plugins:
     - name: '@vrabbi/tech-insights-wrapper-backend'
@@ -53,4 +55,6 @@ backend:
     - name: '@vrabbi/azure-devops-wrapper-backend'
       version: '0.1.0'
     - name: '@vrabbi/jenkins-wrapper-backend'
+      version: '0.1.0'
+    - name: '@vrabbi/vault-wrapper-backend'
       version: '0.1.0'
