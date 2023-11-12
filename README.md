@@ -110,6 +110,20 @@ azureDevOps:
   token: YOUR_AZURE_TOKEN
   organization: YOUR_ORG
 ```
+
+### Vault
+under app_config we must add a dedicated section for our Vault configuration:
+```yaml
+vault:
+  baseUrl: http://your-internal-vault-url.svc
+  publicUrl: https://your-vault-url.example.com
+  token: <VAULT_TOKEN>
+  secretEngine: 'customSecretEngine' # Optional. By default it uses 'secrets'. Can be overwritten by the annotation of the entity
+  kvVersion: <kv-version> # Optional. The K/V version that your instance is using. The available options are '1' or '2'
+  schedule: # Optional. If the token renewal is enabled this schedule will be used instead of the hourly one
+    frequency: { hours: 1 }
+    timeout: { hours: 1 }
+```
   
 ## Annotations on catalog-info.yaml files
 ### Github Insights, Github Actions, Github Pull Requests, Github Issues
@@ -203,4 +217,13 @@ for example:
 annotations:
   dev.azure.com/project-repo: my-project/my-repo
 ```  
-
+### Vault
+```yaml
+annotations:
+  vault.io/secrets-path: path/to/secrets
+```  
+for example:  
+```yaml
+annotations:
+  vault.io/secrets-path: tdp/demo/sample/app-01
+```
