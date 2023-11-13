@@ -3,7 +3,7 @@ In this repo you will find plugin wrappers built and tested for TAP 1.7 based on
   
 An [example TDP Config file](./sample-tdp-config-file.yaml) is provided as well.  
 
-## Integrations
+# Integrations
 <details>
   <summary><h2>Github</h2></summary>
 <details>
