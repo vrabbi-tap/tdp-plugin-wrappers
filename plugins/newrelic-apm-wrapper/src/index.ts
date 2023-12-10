@@ -1,0 +1,1 @@
+export { NewRelicApmPlugin as plugin } from './NewRelicPlugin'

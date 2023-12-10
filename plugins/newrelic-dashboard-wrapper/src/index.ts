@@ -1,0 +1,1 @@
+export { NewRelicDashboardPlugin as plugin } from './NewRelicPlugin'
