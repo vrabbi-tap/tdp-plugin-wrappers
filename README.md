@@ -622,3 +622,63 @@ An [example TDP Config file](./sample-tdp-config-file.yaml) is provided as well.
 </details>
 </details>
 </details>
+<details>
+  <summary><h2>New Relic</h2></summary>
+<details>
+  <summary><h3>New Relic APM</h3></summary>  
+  
+  * [Wrapper Code](./plugins/newrelic-apm-wrapper)  
+  * [Source Plugin Repo](https://github.com/backstage/backstage/blob/master/plugins/newrelic/README.md)  
+  * [Published Package](https://www.npmjs.com/package/@vrabbi/newrelic-apm-wrapper)
+
+<details>
+  <summary>Required Configuration</summary>
+
+  under app_config we must add values to the proxy section:
+  ```yaml
+  proxy:
+    '/newrelic/apm/api':
+      target: "https://api.newrelic.com/v2"
+      headers:
+        X-Api-Key: YOURN_NEWRELIC_USER_API_KEY
+      allowedHeaders:
+        - "link"
+  ```
+
+</details>
+<details>
+  <summary>Annotations</summary>
+
+  This plugin has no needed annotations.
+
+</details>
+</details>
+<details>
+  <summary><h3>New Relic Dashboards</h3></summary>  
+  
+  * [Wrapper Code](./plugins/newrelic-dashboard-wrapper)
+  * [Source Plugin Repo](https://github.com/backstage/backstage/blob/master/plugins/newrelic-dashboard/README.md)  
+  * [Published Package](https://www.npmjs.com/package/@vrabbi/newrelic-dashboard-wrapper)
+
+<details>
+  <summary>Required Configuration</summary>
+
+  under app_config we must add values to the proxy section:
+  ```yaml
+  proxy:
+    '/newrelic/api':
+      target: "https://api.newrelic.com/v2"
+      headers:
+        X-Api-Key: YOURN_NEWRELIC_USER_API_KEY
+  ```
+
+</details>
+<details>
+  <summary>Annotations</summary>
+
+  Required annotations:  
+  * newrelic.com/dashboard-guid
+
+</details>
+</details>
+</details>
