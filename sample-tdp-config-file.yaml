@@ -40,6 +40,14 @@ app:
       version: '0.1.0'
     - name: '@vrabbi/vault-wrapper'
       version: '0.1.0'
+    - name: '@vrabbi/newrelic-apm-wrapper'
+      version: '0.1.0'
+    - name: '@vrabbi/newrelic-dashboard-wrapper'
+      version: '0.1.0'
+    - name: '@vrabbi/kafka-wrapper'
+      version: '0.1.0'
+    - name: '@vrabbi/datadog-wrapper'
+      version: '0.1.0'
 backend:
   plugins:
     - name: '@vrabbi/tech-insights-wrapper-backend'
@@ -53,6 +61,8 @@ backend:
     - name: '@vrabbi/backstage-devtools-wrapper-backend'
       version: '0.1.0'
     - name: '@vrabbi/azure-devops-wrapper-backend'
+      version: '0.1.0'
+    - name: '@vrabbi/kafka-wrapper-backend'
       version: '0.1.0'
     - name: '@vrabbi/jenkins-wrapper-backend'
       version: '0.1.0'
