@@ -1,0 +1,1 @@
+export { KafkaFrontendPlugin as plugin } from './KafkaPlugin'

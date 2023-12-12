@@ -682,3 +682,85 @@ An [example TDP Config file](./sample-tdp-config-file.yaml) is provided as well.
 </details>
 </details>
 </details>
+<details>
+  <summary><h2>Kafka</h2></summary>
+<details>
+  <summary><h3>Frontend Plugin</h3></summary>  
+  
+  * [Wrapper Code](./plugins/kafka-wrapper)  
+  * [Source Plugin Repo](https://github.com/backstage/backstage/blob/master/plugins/kafka/README.md)  
+  * [Published Package](https://www.npmjs.com/package/@vrabbi/kafka-wrapper)
+
+<details>
+  <summary>Required Configuration</summary>
+  
+  This plugin requires the related backend plugin.
+
+</details>
+<details>
+  <summary>Annotations</summary>
+
+  Required annotations:
+  * kafka.apache.org/consumer-groups
+
+  Optional annotations:
+  * kafka.apache.org/dashboard-urls
+
+</details>
+</details>
+<details>
+  <summary><h3>Backend Plugin</h3></summary>  
+  
+  * [Wrapper Code](./plugins/kafka-wrapper-backend)
+  * [Source Plugin Repo](https://github.com/backstage/backstage/blob/master/plugins/kafka-backend/README.md)  
+  * [Published Package](https://www.npmjs.com/package/@vrabbi/kafka-wrapper-backend)
+
+<details>
+  <summary>Required Configuration</summary>
+
+  under app_config we must add a dedicated kafka section:
+  ```yaml
+  kafka:
+    clientId: YOUR_CLIUENT_ID
+    clusters:
+      - name: CLUSTER_NAME
+        brokers:
+          - BROKER_ADDRESS:BROKER_PORT
+        ssl: true # Optional
+        sasl: # Optional
+          mechanism: plain # or 'scram-sha-256' or 'scram-sha-512' # Optional
+          username: my-username # Optional
+          password: my-password # Optional
+  ```
+
+</details>
+</details>
+</details>
+<details>
+  <summary><h2>Datadog</h2></summary>
+<details>
+  <summary><h3>Frontend Plugin</h3></summary>
+
+  * [Wrapper Code](./plugins/datadog-wrapper)
+  * [Source Plugin Repo](https://github.com/RoadieHQ/roadie-backstage-plugins/blob/main/plugins/frontend/backstage-plugin-datadog/README.md)
+  * [Published Package](https://www.npmjs.com/package/@vrabbi/datadog-wrapper)
+
+<details>
+  <summary>Required Configuration</summary> 
+
+  No required configuration for this plugin.
+  
+</details>
+<details>
+  <summary>Annotations</summary>
+
+  Required Annotations:
+  * datadoghq.com/dashboard-url
+
+  Optional annotations:
+  * datadoghq.com/graph-token
+  * datadoghq.com/site
+
+</details>
+</details>
+</details>
