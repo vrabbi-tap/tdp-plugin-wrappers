@@ -1,6 +1,7 @@
 # TDP Plugin Wrappers
-In this repo you will find plugin wrappers built and tested for TAP 1.7 based on OSS backstage plugins.
-Currently this repo contains 33 tested plugin wrappers.
+In this repo you will find plugin wrappers built and tested for TAP 1.7 based on OSS backstage plugins.  
+  
+**Currently this repo contains 33 tested plugin wrappers.**
   
 An [example TDP Config file](./sample-tdp-config-file.yaml) is provided as well.  
 
