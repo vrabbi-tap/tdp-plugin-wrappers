@@ -48,6 +48,8 @@ app:
       version: '0.1.0'
     - name: '@vrabbi/datadog-wrapper'
       version: '0.1.0'
+    - name: '@vrabbi/mlworkflows-wrapper'
+      version: '0.1.0'
 backend:
   plugins:
     - name: '@vrabbi/tech-insights-wrapper-backend'
@@ -67,4 +69,6 @@ backend:
     - name: '@vrabbi/jenkins-wrapper-backend'
       version: '0.1.0'
     - name: '@vrabbi/vault-wrapper-backend'
+      version: '0.1.0'
+    - name: '@vrabbi/mlworkflows-wrapper-backend'
       version: '0.1.0'

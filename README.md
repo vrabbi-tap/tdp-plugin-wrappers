@@ -1,7 +1,7 @@
 # TDP Plugin Wrappers
 In this repo you will find plugin wrappers built and tested for TAP 1.7 based on OSS backstage plugins.  
   
-**Currently this repo contains 33 tested plugin wrappers.**
+**Currently this repo contains 35 tested plugin wrappers.**
   
 An [example TDP Config file](./sample-tdp-config-file.yaml) is provided as well.  
 
@@ -764,5 +764,36 @@ An [example TDP Config file](./sample-tdp-config-file.yaml) is provided as well.
   * datadoghq.com/site
 
 </details>
+</details>
+</details>
+<details>
+  <summary><h2>ML Workflows</h2></summary>
+<details>
+  <summary><h3>Frontend Plugin</h3></summary>  
+  
+  * [Wrapper Code](./plugins/mlworkflows-wrapper)  
+  * [Source Plugin Repo](https://github.com/agapebondservant/ml-backstage-plugin-accelerator/tree/main/plugins/mlworkflows-main)  
+  * [Published Package](https://www.npmjs.com/package/@vrabbi/mlworkflows-wrapper)
+
+<details>
+  <summary>Required Configuration</summary>
+  
+  This plugin requires the related backend plugin.
+  You must also set the following configuration in your TAP values under the app_config section:
+  ```yaml
+  mlbackstage:
+    clusterName: CLUSTER_NAME
+    imageRepoBaseUrl: IMAGE_REPO_BASE_URL
+  ```
+
+</details>
+</details>
+<details>
+  <summary><h3>Backend Plugin</h3></summary>  
+  
+  * [Wrapper Code](./plugins/mlworkflows-wrapper-backend)
+  * [Source Plugin Repo](https://github.com/agapebondservant/ml-backstage-plugin-accelerator/tree/main/plugins/mlworkflows-backend)  
+  * [Published Package](https://www.npmjs.com/package/@vrabbi/mlworkflows-wrapper-backend)
+
 </details>
 </details>
